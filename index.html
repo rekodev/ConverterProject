@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/28cd0c2137.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>Converter by Reko</title>
+  </head>
+  <body>
+    <header>
+      <button id="mass-button" type="button" href="#">Mass</button>
+      <button id="length-button" type="button" href="#">Length</button>
+      <button id="temperature-button" href="#">Temperature</button>
+    </header>
+    <main>
+      <section>
+        <div class="section-background"></div>
+        <h1>Convert Pounds To Kilograms</h1>
+        <div class="conversion">
+          <div class="lbs">
+            <label id="label-from" for="lbs">Lbs</label>
+            <input type="text" name="lbs" id="lbs" />
+          </div>
+          <i class="fa-solid fa-equals"></i>
+          <div class="kg">
+            <label id="label-to" for="kg">Kg</label>
+            <input type="text" name="kg" id="kg" />
+          </div>
+          <button type="button" id="swap">
+            <i class="fa-solid fa-right-left"></i>
+          </button>
+        </div>
+        <div class="convert-reset">
+          <button type="button" id="convert">Convert</button>
+          <button type="button" id="reset">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>rekodev &copy; 2023</p>
+      <a href="https://github.com/rekodev"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+    </footer>
+  </body>
+</html>
