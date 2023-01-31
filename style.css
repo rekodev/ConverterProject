@@ -11,20 +11,20 @@ body {
 }
 
 header {
-  height: 125px;
+  height: 15%;
   padding-bottom: 5px;
+  font-size: 0.9em;
 }
 
 header button {
-  color: #111;
-  border: 1px solid #111;
+  color: #eee;
   margin: 5px 10px;
   font-size: 1.2em;
   text-decoration: none;
-  background: #fafafa;
-  padding: 7.5px 25px;
+  background: #00adb5;
+  padding: 8.75px 25px;
   border-radius: 15px;
-  align-self: flex-end;
+  text-transform: uppercase;
 }
 
 header a:hover {
@@ -33,7 +33,7 @@ header a:hover {
 
 header,
 footer {
-  background: lightgray;
+  background: #222831;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +42,8 @@ footer {
 
 main {
   position: relative;
-  background: linear-gradient(rgb(211, 211, 211), rgb(41, 41, 28));
-  height: calc(100vh - 175px);
+  background: #393e46;
+  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +51,7 @@ main {
 }
 
 section {
+  background-color: #222831;
   position: relative;
   height: 80%;
   min-height: 480px;
@@ -62,11 +63,11 @@ section {
   align-items: center;
   justify-content: space-around;
   z-index: 0;
-  color: #111;
-  border: 1px solid #111;
+  color: #eeeeee;
+  box-shadow: 0 0 20px #222831;
 }
 
-.section-background {
+/* .section-background {
   background: url('https://images.pexels.com/photos/669576/pexels-photo-669576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-repeat: no-repeat;
   background-position: center center;
@@ -77,17 +78,19 @@ section {
   border-radius: 15px;
   opacity: 0.5;
   z-index: -1;
-}
+} */
 
 h1 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 600;
   text-align: center;
   margin: 20px 20px 0 20px;
+  text-transform: uppercase;
 }
 
 .conversion {
   height: 40%;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -107,7 +110,7 @@ input {
   border-radius: 5px;
   border: 1px solid #111;
   outline: none;
-  background: rgb(233, 233, 233);
+  background: #eeeeee;
 }
 
 input:focus {
@@ -142,7 +145,6 @@ a {
 .convert-reset button {
   height: 45px;
   margin: 10px;
-  border: 1px solid #111;
 }
 
 .convert-reset button i {
@@ -150,17 +152,18 @@ a {
 }
 
 .convert-reset button:first-child {
-  /* background-color: rgb(253, 217, 125); */
   border-radius: 5px;
   width: 120px;
   font-size: 1.2em;
-  background: linear-gradient(rgb(255, 229, 164), rgb(255, 209, 92));
+  background: #00adb5;
+  color: #eee;
 }
 
 .convert-reset button:last-child {
   border-radius: 50%;
   width: 45px;
-  background: linear-gradient(#fff, lightgray);
+  background: #eee;
+  color: #222831;
 }
 
 button {
@@ -173,19 +176,24 @@ button:hover {
 }
 
 footer {
-  background: rgb(41, 41, 28);
-  height: 50px;
-  align-items: flex-start;
+  background: #222831;
+  height: 10%;
   font-size: 0.95em;
   padding-top: 5px;
 }
 
 button#swap {
-  background: linear-gradient(#fff, lightgray);
-  padding: 5px 17.5px;
+  background: #eee;
+  padding: 7.5px 20px;
   border-radius: 5px;
   margin: 0 10px;
-  border: 1px solid #111;
+  margin-top: 10px;
+  border: 1px solid #eee;
+}
+
+button#swap i {
+  font-size: 1.4em;
+  color: #222831;
 }
 
 .conversion > i {
