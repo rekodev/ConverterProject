@@ -22,8 +22,8 @@ function massFunc() {
 function length() {
   let lengthButton = document.getElementById('length-button');
   lengthButton.addEventListener('click', function () {
-    labelFrom.innerHTML = 'Miles';
-    labelTo.innerHTML = 'Kilometers';
+    labelFrom.innerHTML = 'M';
+    labelTo.innerHTML = 'Km';
     mainHeadline.innerHTML = 'Convert Miles to Kilometers';
     resetValues();
   });
@@ -50,9 +50,9 @@ function convert(value) {
   }
 
   const coefficientLength = 1.60934;
-  if (labelFrom.innerHTML == 'Miles') {
+  if (labelFrom.innerHTML == 'M') {
     newValue = value * coefficientLength;
-  } else if (labelFrom.innerHTML == 'Kilometers') {
+  } else if (labelFrom.innerHTML == 'Km') {
     newValue = value / coefficientLength;
   }
 
@@ -97,13 +97,13 @@ function swap() {
   }
 
   // Length
-  if (labelFrom.innerHTML == 'Miles') {
-    labelFrom.innerHTML = 'Kilometers';
-    labelTo.innerHTML = 'Miles';
+  if (labelFrom.innerHTML == 'M') {
+    labelFrom.innerHTML = 'Km';
+    labelTo.innerHTML = 'M';
     mainHeadline.innerHTML = 'Convert Kilometers To Miles';
-  } else if (labelFrom.innerHTML == 'Kilometers') {
-    labelFrom.innerHTML = 'Miles';
-    labelTo.innerHTML = 'Kilometers';
+  } else if (labelFrom.innerHTML == 'Km') {
+    labelFrom.innerHTML = 'M';
+    labelTo.innerHTML = 'Km';
     mainHeadline.innerHTML = 'Convert Miles to Kilometers';
   }
 
