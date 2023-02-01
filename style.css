@@ -55,6 +55,7 @@ section {
   position: relative;
   height: 80%;
   min-height: 480px;
+  max-height: 720px;
   width: 80%;
   max-width: 400px;
   border-radius: 15px;
@@ -84,7 +85,7 @@ h1 {
   font-size: 1.4em;
   font-weight: 600;
   text-align: center;
-  margin: 20px 20px 0 20px;
+  margin: 20px 30px 0 30px;
   text-transform: uppercase;
 }
 
@@ -107,8 +108,8 @@ input {
   padding: 10px;
   font-size: 1.4em;
   margin: 10px 0;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #111;
   outline: none;
   background: #eeeeee;
 }
@@ -127,6 +128,7 @@ input:focus {
 .kg label,
 .lbs label {
   position: absolute;
+  left: 2px;
   top: -30px;
   font-size: 1.6em;
 }
@@ -200,7 +202,7 @@ button#swap i {
   margin: 0 10px;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1023px) {
   header button {
     font-size: 1.4em;
   }
@@ -228,82 +230,47 @@ button#swap i {
   }
 }
 
-/* @media screen and (max-width: 480px) {
-  header {
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 20%;
-    padding: 10px 0;
-  }
-
-  main {
-    height: 72.5%;
-    align-items: flex-start;
-    padding-top: 10px;
-  }
-
+@media screen and (min-width: 1024px) {
   header button {
-    font-size: 1.2em;
-    margin: 0 10px;
-  }
-
-  footer {
-    height: 7.5%;
-    font-size: 0.8em;
-  }
-
-  .conversion {
-    flex-direction: column;
-    margin: 75px 0;
-  }
-
-  .conversion #swap {
-    margin-top: 10px;
-  }
-
-  input {
-    height: 45px;
-    width: 192.5px;
-  }
-
-  .kg label,
-  .lbs label {
-    position: absolute;
-    top: -35px;
-    font-size: 1.4em;
+    font-size: 1.8em;
+    margin: 0 20px;
   }
 
   h1 {
-    font-size: 1.6em;
+    font-size: 2em;
+    margin-top: 20px;
   }
 
   section {
-    height: 85%;
-    box-shadow: 0 0 2px rgb(119, 119, 119);
-    border-radius: 5px solid red;
-    min-width: 256px;
-    margin-top: -10px;
+    max-width: 800px;
+    min-height: 400px;
+    height: 400px;
+    padding: 10px 0;
   }
 
-  .convert-reset {
-    min-width: 150px;
-    display: flex;
-    justify-content: center;
+  .conversion {
     align-items: center;
-    padding: 10px;
-  }
-
-  .convert-reset #convert,
-  .convert-reset #reset {
-    height: 50px;
-  }
-
-  .convert-reset #reset {
-    width: 50px;
+    flex-direction: row;
+    width: 85%;
+    margin-top: 25px;
   }
 
   button#swap {
-    font-size: 0.75em;
+    margin-top: 0;
   }
-} */
+
+  .convert-reset #convert {
+    height: 65px;
+    width: 150px;
+    font-size: 1.4em;
+  }
+
+  .convert-reset #reset {
+    height: 62.5px;
+    width: 62.5px;
+  }
+
+  footer {
+    font-size: 1.2em;
+  }
+}
